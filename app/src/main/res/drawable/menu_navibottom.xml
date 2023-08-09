@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dsphong"
+        android:icon="@drawable/nav_room"
+        android:enabled="true"
+        android:textStyle="bold"
+        android:title="Phòng" />
+    <item
+        android:id="@+id/dskhach"
+        android:enabled="true"
+        android:textStyle="bold"
+        android:icon="@drawable/nav_cus"
+        android:title="Khách"/>
+    <item
+        android:id="@+id/dshoadon"
+        android:enabled="true"
+        android:textStyle="bold"
+        android:icon="@drawable/nav_bill"
+        android:title="Hóa Đơn"/>
+</menu>

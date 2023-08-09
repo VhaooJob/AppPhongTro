@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Khach.DetailKhach">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/header_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
+        android:id="@+id/imgCus_detailCus"
+        android:layout_width="191dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvName_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Trịnh Kiết Tường"
+        app:layout_constraintStart_toEndOf="@+id/imgCus_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/include3" />
+
+    <TextView
+        android:id="@+id/tvAddress_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Đắk Lắk"
+        app:layout_constraintStart_toEndOf="@+id/imgCus_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge_detailCus" />
+
+    <TextView
+        android:id="@+id/tvPhone_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="0967402772"
+        app:layout_constraintStart_toEndOf="@+id/imgCus_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress_detailCus" />
+
+    <TextView
+        android:id="@+id/tvRoom_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="16dp"
+        android:text="phòng 1,2"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhone_detailCus" />
+
+    <TextView
+        android:id="@+id/tvAge_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="20"
+        app:layout_constraintStart_toEndOf="@+id/imgCus_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/tvName_detailCus" />
+
+    <Button
+        android:id="@+id/btnEdit_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCus_detailCus" />
+
+    <Button
+        android:id="@+id/btnXoa_detailCus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:text="Xoa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHuythuephong_detailCus" />
+
+    <Button
+        android:id="@+id/btnThueThem_detailCus"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:text="Thuê thêm phòng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdit_detailCus" />
+
+    <Button
+        android:id="@+id/btnHuythuephong_detailCus"
+        android:layout_width="96dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:text="Hủy thuê phòng"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnThueThem_detailCus" />
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/lv_ThueThem"
+        android:layout_width="273dp"
+        android:layout_height="306dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit_detailCus"
+        app:layout_constraintTop_toBottomOf="@+id/imgCus_detailCus" />
+
+    <Button
+        android:id="@+id/btnHuyThueThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="2dp"
+        android:text="Hủy"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_ThueThem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
